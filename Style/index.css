@@ -7,6 +7,12 @@
     display: none;
 }
 
+@media screen and (min-width: 576px) {
+    .loan-date{
+        display: table-cell;
+    }
+}
+
 .font .actions{
     font-size: 14px;
 }
