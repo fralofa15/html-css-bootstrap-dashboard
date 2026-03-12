@@ -6,191 +6,226 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style/index.css">
 </head>
 
 <body class="container row justify-content-center">
     <section class=" col-8">
-    <div class="col-12 d-flex justify-content-between align-items-end">
-        <p>Catalogo libri</p>
-        <button type="button" class="btn btn-primary btn-lg">Aggiungi libro</button>
-    </div>
-    <section>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">Titolo</th>
-                    <th scope="col">Data prestito</th>
-                    <th scope="col">Stato</th>
-                    <th scope="col">Azioni</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>I pilastri della terra</td>
-                    <td>-</td>
-                    <td class="status">Disponibile</td>
-                    <td class="actions"></td>
-                </tr>
-                <tr>
-                    <td>I promessi sposi</td>
-                    <td>-</td>
-                    <td class="status">Disponibile</td>
-                    <td class="actions"></td>
-                </tr>
-                <tr>
-                    <td>Il signore degli anelli</td>
-                    <td>18/10/2023</td>
-                    <td class="status">In prestito</td>
-                    <td class="actions"></td>
-                </tr>
-                <tr>
-                    <td>Harry Potter e la pietra filosofale</td>
-                    <td>-</td>
-                    <td class="status">Disponibile</td>
-                    <td class="actions"></td>
-                </tr>
-                <tr>
-                    <td>Il codice Da Vinci</td>
-                    <td>-</td>
-                    <td class="status">Non disponibile</td>
-                    <td class="actions"></td>
-                </tr>
-                <tr>
-                    <td>Shining</td>
-                    <td>-</td>
-                    <td class="status">Disponibile</td>
-                    <td class="actions"></td>
-                </tr>
-                <tr>
-                    <td>La divina commedia</td>
-                    <td>21/09/2023</td>
-                    <td class="status">In prestito</td>
-                    <td class="actions"></td>
-                </tr>
-                <tr>
-                    <td>Il trono di spade</td>
-                    <td>-</td>
-                    <td class="status">Disponibile</td>
-                    <td class="actions"></td>
-                </tr>
-                <tr>
-                    <td>Il mondo di Sofia</td>
-                    <td>-</td>
-                    <td class="status">Non disponibile</td>
-                    <td class="actions"></td>
-                </tr>
-                <tr>
-                    <td>Le cronache di Narnia: il leone, la strega e l'armadio</td>
-                    <td>25/07/2023</td>
-                    <td class="status">In prestito</td>
-                    <td class="actions"></td>
-                </tr>
-                <tr>
-                    <td>Il piccolo principe</td>
-                    <td>-</td>
-                    <td class="status">Disponibile</td>
-                    <td class="actions"></td>
-                </tr>
-                <tr>
-                    <th>La storia infinita</th>
-                    <td>-</td>
-                    <td class="status">Disponibile</td>
-                    <td class="actions"></td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/duck.png" alt="" class="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
 
 
-    <section class="text-left">
-        <div class="card">
-            <div class="card-header">
-                <h3 class="ms-2">Todo</h3>
-            </div>
-            <div class="card m-3">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                            <label class="form-check-label" for="checkDefault">
-                                Chiamare segreteria
-                            </label>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
-                            <label class="form-check-label" for="checkChecked">
-                                Mandare avvisi prestiti scaduti
-                            </label>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
-                            <label class="form-check-label" for="checkChecked">
-                                Ordinare nuovi libri
-                            </label>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+        <div class="col-12 d-flex justify-content-between align-items-end">
+            <p>Catalogo libri</p>
+            <button type="button" class="btn btn-primary btn-lg">Aggiungi libro</button>
         </div>
-    </section>
+        <section>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Titolo</th>
+                        <th scope="col">Data prestito</th>
+                        <th scope="col">Stato</th>
+                        <th scope="col">Azioni</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I pilastri della terra</td>
+                        <td>-</td>
+                        <td class="status">Disponibile</td>
+                        <td class="actions"></td>
+                    </tr>
+                    <tr>
+                        <td>I promessi sposi</td>
+                        <td>-</td>
+                        <td class="status">Disponibile</td>
+                        <td class="actions"></td>
+                    </tr>
+                    <tr>
+                        <td>Il signore degli anelli</td>
+                        <td>18/10/2023</td>
+                        <td class="status">In prestito</td>
+                        <td class="actions"></td>
+                    </tr>
+                    <tr>
+                        <td>Harry Potter e la pietra filosofale</td>
+                        <td>-</td>
+                        <td class="status">Disponibile</td>
+                        <td class="actions"></td>
+                    </tr>
+                    <tr>
+                        <td>Il codice Da Vinci</td>
+                        <td>-</td>
+                        <td class="status">Non disponibile</td>
+                        <td class="actions"></td>
+                    </tr>
+                    <tr>
+                        <td>Shining</td>
+                        <td>-</td>
+                        <td class="status">Disponibile</td>
+                        <td class="actions"></td>
+                    </tr>
+                    <tr>
+                        <td>La divina commedia</td>
+                        <td>21/09/2023</td>
+                        <td class="status">In prestito</td>
+                        <td class="actions"></td>
+                    </tr>
+                    <tr>
+                        <td>Il trono di spade</td>
+                        <td>-</td>
+                        <td class="status">Disponibile</td>
+                        <td class="actions"></td>
+                    </tr>
+                    <tr>
+                        <td>Il mondo di Sofia</td>
+                        <td>-</td>
+                        <td class="status">Non disponibile</td>
+                        <td class="actions"></td>
+                    </tr>
+                    <tr>
+                        <td>Le cronache di Narnia: il leone, la strega e l'armadio</td>
+                        <td>25/07/2023</td>
+                        <td class="status">In prestito</td>
+                        <td class="actions"></td>
+                    </tr>
+                    <tr>
+                        <td>Il piccolo principe</td>
+                        <td>-</td>
+                        <td class="status">Disponibile</td>
+                        <td class="actions"></td>
+                    </tr>
+                    <tr>
+                        <th>La storia infinita</th>
+                        <td>-</td>
+                        <td class="status">Disponibile</td>
+                        <td class="actions"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
 
-    <section class="mt-4 mb-5">
-        <div class="card">
-            <div class="card-header">
-                <h3 class="ms-2">F.A.Q</h3>
-            </div>
-            <div class="accordion" id="accordionPanelsStayOpenExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                            aria-controls="panelsStayOpen-collapseOne">
-                            Come aggiungere un nuovo libro?
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                        <div class="accordion-body">
-                            <p>aggiungi libro.</p>
-                        </div>
-                    </div>
+
+        <section class="text-left">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="ms-2">Todo</h3>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                            aria-controls="panelsStayOpen-collapseTwo">
-                            Come posso accedere all'anagrafica utenti?
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            <p>Anagrafica utenti.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                            aria-controls="panelsStayOpen-collapseThree">
-                            Posso usare questa dashboard da mobile?
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            <p>Dashboard mobile.</p>
-                        </div>
-                    </div>
+                <div class="card m-3">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                <label class="form-check-label" for="checkDefault">
+                                    Chiamare segreteria
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                                <label class="form-check-label" for="checkChecked">
+                                    Mandare avvisi prestiti scaduti
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                                <label class="form-check-label" for="checkChecked">
+                                    Ordinare nuovi libri
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+
+        <section class="mt-4 mb-5">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="ms-2">F.A.Q</h3>
+                </div>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                Come aggiungere un nuovo libro?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <p>aggiungi libro.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                Come posso accedere all'anagrafica utenti?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <p>Anagrafica utenti.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                Posso usare questa dashboard da mobile?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <p>Dashboard mobile.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
