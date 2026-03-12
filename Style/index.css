@@ -2,3 +2,42 @@
     width: 40px;
     height: 40px;
 }
+
+.loan-date {
+    display: none;
+}
+
+.font .actions{
+    font-size: 14px;
+}
+
+.font {
+    font-size: 12px;
+    text-align: left;
+}
+
+.font td {
+    font-size: 10px;
+    text-align: left;
+}
+
+.color-g {
+    background-color: green;
+    color: white;
+    padding: 2px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.color-y {
+    background-color: orange;
+    color: white;
+    padding: 2px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.color-r {
+    background-color: red;
+    color: white;
+    padding: 2px 10px 3px 10px;
+    border-radius: 15px;
+}
